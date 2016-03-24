@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leopard3699.github.io/"/>
-  <updated>2016-03-24T03:42:33.000Z</updated>
+  <updated>2016-03-24T05:32:27.000Z</updated>
   <id>http://leopard3699.github.io/</id>
   
   <author>
@@ -16,26 +16,198 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://leopard3699.github.io/2016/03/24/hello-world/"/>
-    <id>http://leopard3699.github.io/2016/03/24/hello-world/</id>
-    <published>2016-03-24T03:42:33.000Z</published>
-    <updated>2016-03-24T03:42:33.000Z</updated>
+    <title></title>
+    <link href="http://leopard3699.github.io/2016/03/24/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/"/>
+    <id>http://leopard3699.github.io/2016/03/24/搭建环境/</id>
+    <published>2016-03-24T05:32:27.000Z</published>
+    <updated>2016-03-24T05:32:27.000Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html">&lt;p&gt;#搭建后台环境&lt;/p&gt;
+&lt;p&gt;##应用服务安装及配置&lt;/p&gt;
+&lt;p&gt;###Server打包&lt;br&gt;1.在其他环境找一份完备的Server目录，打包下载到待安装环境&lt;br&gt;2.Server文件夹说明 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bin      ——后台服务的可执行文件        
+lib      ——后台服务的动态链接文件目录      
+move     ——保单转移数据目录      
+etc         ——后台服务的配置目录，包括应用服务环境和服务配置文件。  
+dev      ——存放TLOG文件是各个site1上的事务日志文件。  
+xml_data ——存放保全，理赔等打印产生XML信息  
+xml_data/excel ——日结清单打印产生XML信息   
+trans    ——存放银行转帐的数据文件   
+log      ——存放交易日志及tuxedo日志及分红数据文件      
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###环境变量配置&lt;br&gt;1.修改$HOME/.bash_profile文件,在.bash_profile最后增加一行. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;. ./Server/etc/setenv.sh    
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.修改$HOME/Server/etc/setenv.sh中的环境变量设置,应用服务需要修改设置有 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;WSNADDR：UBBCONFIG中WSL的地址
+CBPSDIR：后台服务安装目录    
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.修改后好setevn.sh文件,重新登录系统  &lt;/p&gt;
+&lt;p&gt;###UBB、DM配置&lt;/p&gt;
+&lt;p&gt;####UBB&lt;br&gt;1.从其他环境导入一份新的ubb文件     &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tmunloadcf &amp;gt;ubb        
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.修改ubb中如下信息 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;*RESOURCES
+    IPCKEY        40007
+    MASTER        &amp;quot;CBPS24&amp;quot;    #修改此处的CBPS24改为新环境名字
+    UID        903
+    GID        500
+    DOMAINID    &amp;quot;CBPS24DEV&amp;quot;    #修改此处的CBPS24DEV改为新环境名字
+*MACHINES
+    &amp;quot;k1rhel582324&amp;quot;    LMID=&amp;quot;CBPS24&amp;quot;  #修改此处的k1rhel582324、CBPS24改为新环境名字
+    TUXCONFIG=&amp;quot;/datafs/fs/Server/etc/tuxconfig&amp;quot;  
+    TUXDIR=&amp;quot;/bea/tuxedo111120/tuxedo11gR1&amp;quot; 
+    APPDIR=&amp;quot;/datafs/fs/Server/bin&amp;quot; 
+    TLOGDEVICE=&amp;quot;/datafs/fs/Server/dev/TLOG&amp;quot; 
+    TLOGNAME=&amp;quot;TLOG&amp;quot;
+    TLOGSIZE=500
+    ULOGPFX=&amp;quot;/datafs/fs/Server/log/ULOG&amp;quot; 
+
+*GROUPS
+
+*RMS
+
+*NETGROUPS
+
+*SERVERS
+    &amp;quot;WSL&amp;quot;    SRVGRP=&amp;quot;TUXSYSTEM&amp;quot;    SRVID=9999
+    CLOPT=&amp;quot;-A -t --  -n //10.31.23.24:18300 -m 3 -M 10 -x 1 #修改WSL的IP地址配置         -p    21701    -P    21799&amp;quot; 
+    RQPERM=0666    REPLYQ=Y    RPPERM=0666    MIN=1        MAX=10    CONV=N
+    SYSTEM_ACCESS=FASTPATH
+    MAXGEN=20    GRACE=0    RESTART=Y
+    MINDISPATCHTHREADS=0    MAXDISPATCHTHREADS=1        THREADSTACKSIZE=0
+    SICACHEENTRIESMAX=&amp;quot;500&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.由于tuxedo编译没有自动更新机制，需要先tuxcnofig文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm $CBPSDIR/etc/tuxconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.导入ubb    &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tmloadcf  ubb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####DM&lt;br&gt;1.从其他环境导入一份新的DM文件     &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dmunloadcf &amp;gt;dm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.修改dm中如下信息    &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;*DM_RESOURCES
+
+*DM_LOCAL
+
+&amp;quot;CBPS24DEV&amp;quot;    GWGRP=&amp;quot;LGWGRP&amp;quot;
+    ACCESSPOINTID=&amp;quot;CBPS24DEV&amp;quot;
+    DMTLOGDEV=&amp;quot;/datafs/fs/Server/dev/DMTLOG&amp;quot;
+    DMTLOGNAME=&amp;quot;DMTLOG&amp;quot;
+
+*DM_REMOTE
+...
+
+*DM_TDOMAIN
+#配置本机DOMAIN
+&amp;quot;CBPS24DEV&amp;quot;    NWADDR=&amp;quot;//10.31.23.24:28300&amp;quot;
+    NWPROTOCOL=LLE
+
+
+*DM_EXPORT
+
+#将节点中的LACCESSPOINTID改为DM_LOCAL中配置的DOMAIN_ID
+...
+
+
+*DM_IMPORT
+#将节点中的LACCESSPOINTID改为DM_LOCAL中配置的DOMAIN_ID
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.由于tuxedo编译没有自动更新机制，需要先bdmcnofig文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm $CBPSDIR/etc/bdmconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.导入DM &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dmloadcf dm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;##数据库设置&lt;/p&gt;
+&lt;p&gt;###删除原数据库&lt;br&gt;一种直接删除数据库，另外一种只删除数据库实例上的用户及数据文件&lt;/p&gt;
+&lt;p&gt;####删除数据库实例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sqlplus / as sysdba
+SQL&amp;gt; shutdown immediate;
+SQL&amp;gt; startup restrict mount;
+SQL&amp;gt; drop database cbps;
+Database dropped
+SQL&amp;gt; exit
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####删除原用户&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;drop user biz_proc cascade;
+drop user cl_biz1 cascade;
+drop user cl_biz2 cascade;
+drop user cl_cntap cascade;
+drop user cl_cntr1 cascade;
+drop user cl_cntr2 cascade;
+drop user cl_interface cascade;
+drop user cl_cust1 cascade;
+drop user code cascade;
+drop user product cascade;
+drop user incrementcbpsv8 cascade;
+drop user un_biz cascade;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####删除原表空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;drop tablespace xxx including contents;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#####删除原表空间数据文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm /datafs/oradata/cbps/v8data*
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###创建新库&lt;/p&gt;
+&lt;p&gt;####创建数据库实例&lt;br&gt;在未创建数据库实例时执行如下语句&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dbca -silent -createDatabase -gdbname cbps -sid cbps -sysPassword oracle -systemPassword oracle -datafileDestination /datafs/oradata -recoveryAreaDestination /datafs/oradata -storageType FS -databaseType OLTP -characterSet ZHS32GB18030 -nationalCharacterSet AL16UTF16 -templateName $ORACLE_HOME/assistants/dbca/templates/General_Purpose.dbc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####计算原表空间大小&lt;br&gt;在导出库执行如下SQL&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select
+b.file_name 物理文件名,
+b.tablespace_name 表空间,
+b.bytes/1024/1024 大小,
+(b.bytes-sum(nvl(a.bytes,0)))/1024/1024  已使用,
+substr((b.bytes-sum(nvl(a.bytes,0)))/(b.bytes)*100,1,5)  利用率
+from dba_free_space a,dba_data_files b
+where a.file_id=b.file_id
+group by b.tablespace_name,b.file_name,b.bytes
+order by b.tablespace_name;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####创建表空间&lt;br&gt;根据上面计算出的表空间大小，按需创建表空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;create tablespace tjv8dttbs datafile &amp;apos;/datafs/oradata/cbps/v8data01.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data02.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data03.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data04.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data05.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data06.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data07.dbf&amp;apos; size 32000M autoextend off;
+alter tablespace tjv8dttbs add datafile &amp;apos;/datafs/oradata/cbps/v8data08.dbf&amp;apos; size 32000M autoextend off;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####创建DBLINK&lt;br&gt;sys用户登录数据库，创建数据库链接，通过DBLINK方式导库（也可通过常规的EXPDP、IMPDP操作）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sqlplus sys/oracle@cbps    as sysdba
+
+create database link link101 connect to cl_biz1 identified by wasd4321 using &amp;apos;(DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 10.31.17.101)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = cbps)     )   )&amp;apos;; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####导入整库&lt;br&gt;注意源库中的表空间，需将所涉及的所有表空间都导入到新库，耗时较长，按目前天津库情况一般需要8-12小时&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nohup impdp system/oracle@cbps network_link=link101 logfile=impdp101_1001.log schemas=BIZ_PROC,CL_BIZ1,CL_BIZ2,CL_CNTAP,CL_CNTR1,CL_CNTR2,CL_INTERFACE,CL_CUST1,CODE,PRODUCT,UN_BIZ,incrementcbpsv8 remap_tablespace=TJV8DTTBS:tjv8dttbs,TJV8IDXTBS:tjv8dttbs  &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####导入public同义词&lt;br&gt;有时候有些pulic的同义词未导入到新库，需要重新创建这些同义词&lt;br&gt;首先先在源库查询pulic的同义词，将SQL查询结果在sqlplus下执行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT &amp;apos;CREATE  PUBLIC SYNONYM &amp;apos;||synonym_name||&amp;apos; FOR &amp;apos;||table_owner||&amp;apos;.&amp;apos;||table_name||&amp;apos;;&amp;apos; FROM DBA_SYNONYMS WHERE 
+table_owner in (&amp;apos;BIZ_PROC&amp;apos;,&amp;apos;CL_BIZ1&amp;apos;,&amp;apos;CL_BIZ2&amp;apos;,&amp;apos;CL_CNTAP&amp;apos;,&amp;apos;CL_CNTR1&amp;apos;,&amp;apos;CL_CNTR2&amp;apos;,&amp;apos;CL_INTERFACE&amp;apos;,&amp;apos;CL_CUST1&amp;apos;,&amp;apos;CODE&amp;apos;,&amp;apos;PRODUCT&amp;apos;,&amp;apos;UN_BIZ&amp;apos;)  
+AND owner=&amp;apos;PUBLIC&amp;apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###数据库调整&lt;/p&gt;
+&lt;p&gt;####调整数据库链接数&lt;br&gt;修改数据库链接数为1500，并重启数据库&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sqlplus sys/oracle@cbps as sysdba
+SQL&amp;gt; alter system set processes=1500 scope=spfile;
+SQL&amp;gt; shutdown immediate
+SQL&amp;gt; startup
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####调整用户过期设置&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sqlplus sys/oracle@cbps as sysdba
+SQL&amp;gt;ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####重新编译失效对象&lt;br&gt;将如下SQL的执行结果，在sqlplus中执行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SELECT &amp;apos;ALTER &amp;apos; || object_type || &amp;apos; &amp;apos; || owner || &amp;apos;.&amp;apos; || object_name ||
+   &amp;apos; COMPILE;&amp;apos;
+FROM dba_objects
+WHERE status &amp;lt;&amp;gt; &amp;apos;VALID&amp;apos;;
+或直接编译schema
+execute utl_recomp.recomp_serial(&amp;apos;SCOTT&amp;apos;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;####重新对数据库进行统计分析&lt;br&gt;导入过程中会丢失数据库统计分析信息，导致执行计划错误，数据库性能较差，可执行如下SQL重新进行统计分析&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;BIZ_PROC&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_BIZ1&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_BIZ2&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_CNTAP&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_CNTR1&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_CNTR2&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_INTERFACE&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CL_CUST1&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;CODE&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;PRODUCT&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;UN_BIZ&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;INCREMENTCBPSV8&amp;apos;,cascade=&amp;gt; TRUE, degree =&amp;gt;16);
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;#搭建后台环境&lt;/p&gt;
+&lt;p&gt;##应用服务安装及配置&lt;/p&gt;
+&lt;p&gt;###Server打包&lt;br&gt;1.在其他环境找一份完备的Server目录，打包下载到待安装环境&lt;br&gt;2.Server文件夹说明 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bin      ——后台服务的可执行文件 
     
     </summary>
     
