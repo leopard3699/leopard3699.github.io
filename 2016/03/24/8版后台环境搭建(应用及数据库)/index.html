@@ -46,8 +46,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="leopard" type="application/atom+xml" />
 
@@ -61,34 +59,28 @@
 
 
 
-<meta name="description" content="#搭建后台环境
-##应用服务安装及配置
-###Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
+<meta name="description" content="搭建后台环境应用服务安装及配置Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
 bin      ——后台服务的可执行文件        
 lib      ——后台服务的动态链接文件目录      
 move     ——保单转移数据目录      
-etc         ——后台服务的配置目录，包括应用服务环境和服务">
+etc         ——后台服务的配置目录，包括应用服务环境和服务配置文件。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="8版后台环境搭建(应用及数据库)">
 <meta property="og:url" content="http://leopard3699.github.io/2016/03/24/8版后台环境搭建(应用及数据库)/index.html">
 <meta property="og:site_name" content="leopard">
-<meta property="og:description" content="#搭建后台环境
-##应用服务安装及配置
-###Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
+<meta property="og:description" content="搭建后台环境应用服务安装及配置Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
 bin      ——后台服务的可执行文件        
 lib      ——后台服务的动态链接文件目录      
 move     ——保单转移数据目录      
-etc         ——后台服务的配置目录，包括应用服务环境和服务">
-<meta property="og:updated_time" content="2016-03-25T01:05:27.000Z">
+etc         ——后台服务的配置目录，包括应用服务环境和服务配置文件。">
+<meta property="og:updated_time" content="2016-03-25T01:08:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="8版后台环境搭建(应用及数据库)">
-<meta name="twitter:description" content="#搭建后台环境
-##应用服务安装及配置
-###Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
+<meta name="twitter:description" content="搭建后台环境应用服务安装及配置Server打包1.在其他环境找一份完备的Server目录，打包下载到待安装环境2.Server文件夹说明 
 bin      ——后台服务的可执行文件        
 lib      ——后台服务的动态链接文件目录      
 move     ——保单转移数据目录      
-etc         ——后台服务的配置目录，包括应用服务环境和服务">
+etc         ——后台服务的配置目录，包括应用服务环境和服务配置文件。">
 
 
 
@@ -275,9 +267,7 @@ etc         ——后台服务的配置目录，包括应用服务环境和服�
       
 
       
-        <p>#搭建后台环境</p>
-<p>##应用服务安装及配置</p>
-<p>###Server打包<br>1.在其他环境找一份完备的Server目录，打包下载到待安装环境<br>2.Server文件夹说明 </p>
+        <h1 id="搭建后台环境"><a href="#搭建后台环境" class="headerlink" title="搭建后台环境"></a>搭建后台环境</h1><h2 id="应用服务安装及配置"><a href="#应用服务安装及配置" class="headerlink" title="应用服务安装及配置"></a>应用服务安装及配置</h2><h3 id="Server打包"><a href="#Server打包" class="headerlink" title="Server打包"></a>Server打包</h3><p>1.在其他环境找一份完备的Server目录，打包下载到待安装环境<br>2.Server文件夹说明 </p>
 <pre><code>bin      ——后台服务的可执行文件        
 lib      ——后台服务的动态链接文件目录      
 move     ——保单转移数据目录      
@@ -287,14 +277,13 @@ xml_data ——存放保全，理赔等打印产生XML信息
 xml_data/excel ——日结清单打印产生XML信息   
 trans    ——存放银行转帐的数据文件   
 log      ——存放交易日志及tuxedo日志及分红数据文件      
-</code></pre><p>###环境变量配置<br>1.修改$HOME/.bash_profile文件,在.bash_profile最后增加一行. </p>
+</code></pre><h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><p>1.修改$HOME/.bash_profile文件,在.bash_profile最后增加一行. </p>
 <pre><code>. ./Server/etc/setenv.sh    
 </code></pre><p>2.修改$HOME/Server/etc/setenv.sh中的环境变量设置,应用服务需要修改设置有 </p>
 <pre><code>WSNADDR：UBBCONFIG中WSL的地址
 CBPSDIR：后台服务安装目录    
 </code></pre><p>3.修改后好setevn.sh文件,重新登录系统  </p>
-<p>###UBB、DM配置</p>
-<p>####UBB<br>1.从其他环境导入一份新的ubb文件     </p>
+<h3 id="UBB、DM配置"><a href="#UBB、DM配置" class="headerlink" title="UBB、DM配置"></a>UBB、DM配置</h3><h4 id="UBB"><a href="#UBB" class="headerlink" title="UBB"></a>UBB</h4><p>1.从其他环境导入一份新的ubb文件     </p>
 <pre><code>tmunloadcf &gt;ubb        
 </code></pre><p>2.修改ubb中如下信息 </p>
 <pre><code>*RESOURCES
@@ -331,7 +320,7 @@ CBPSDIR：后台服务安装目录
 <pre><code>rm $CBPSDIR/etc/tuxconfig
 </code></pre><p>4.导入ubb    </p>
 <pre><code>tmloadcf  ubb
-</code></pre><p>####DM<br>1.从其他环境导入一份新的DM文件     </p>
+</code></pre><h4 id="DM"><a href="#DM" class="headerlink" title="DM"></a>DM</h4><p>1.从其他环境导入一份新的DM文件     </p>
 <pre><code>dmunloadcf &gt;dm
 </code></pre><p>2.修改dm中如下信息    </p>
 <pre><code>*DM_RESOURCES
@@ -365,17 +354,14 @@ CBPSDIR：后台服务安装目录
 <pre><code>rm $CBPSDIR/etc/bdmconfig
 </code></pre><p>4.导入DM </p>
 <pre><code>dmloadcf dm
-</code></pre><p>##数据库设置</p>
-<p>###删除原数据库<br>一种直接删除数据库，另外一种只删除数据库实例上的用户及数据文件</p>
-<p>####删除数据库实例</p>
-<pre><code>sqlplus / as sysdba
+</code></pre><h2 id="数据库设置"><a href="#数据库设置" class="headerlink" title="数据库设置"></a>数据库设置</h2><h3 id="删除原数据库"><a href="#删除原数据库" class="headerlink" title="删除原数据库"></a>删除原数据库</h3><p>一种直接删除数据库，另外一种只删除数据库实例上的用户及数据文件</p>
+<h4 id="删除数据库实例"><a href="#删除数据库实例" class="headerlink" title="删除数据库实例"></a>删除数据库实例</h4><pre><code>sqlplus / as sysdba
 SQL&gt; shutdown immediate;
 SQL&gt; startup restrict mount;
 SQL&gt; drop database cbps;
 Database dropped
 SQL&gt; exit
-</code></pre><p>####删除原用户</p>
-<pre><code>drop user biz_proc cascade;
+</code></pre><h4 id="删除原用户"><a href="#删除原用户" class="headerlink" title="删除原用户"></a>删除原用户</h4><pre><code>drop user biz_proc cascade;
 drop user cl_biz1 cascade;
 drop user cl_biz2 cascade;
 drop user cl_cntap cascade;
@@ -387,14 +373,11 @@ drop user code cascade;
 drop user product cascade;
 drop user incrementcbpsv8 cascade;
 drop user un_biz cascade;
-</code></pre><p>####删除原表空间</p>
-<pre><code>drop tablespace xxx including contents;
-</code></pre><p>#####删除原表空间数据文件</p>
-<pre><code>rm /datafs/oradata/cbps/v8data*
-</code></pre><p>###创建新库</p>
-<p>####创建数据库实例<br>在未创建数据库实例时执行如下语句</p>
+</code></pre><h4 id="删除原表空间"><a href="#删除原表空间" class="headerlink" title="删除原表空间"></a>删除原表空间</h4><pre><code>drop tablespace xxx including contents;
+</code></pre><h5 id="删除原表空间数据文件"><a href="#删除原表空间数据文件" class="headerlink" title="删除原表空间数据文件"></a>删除原表空间数据文件</h5><pre><code>rm /datafs/oradata/cbps/v8data*
+</code></pre><h3 id="创建新库"><a href="#创建新库" class="headerlink" title="创建新库"></a>创建新库</h3><h4 id="创建数据库实例"><a href="#创建数据库实例" class="headerlink" title="创建数据库实例"></a>创建数据库实例</h4><p>在未创建数据库实例时执行如下语句</p>
 <pre><code>dbca -silent -createDatabase -gdbname cbps -sid cbps -sysPassword oracle -systemPassword oracle -datafileDestination /datafs/oradata -recoveryAreaDestination /datafs/oradata -storageType FS -databaseType OLTP -characterSet ZHS32GB18030 -nationalCharacterSet AL16UTF16 -templateName $ORACLE_HOME/assistants/dbca/templates/General_Purpose.dbc
-</code></pre><p>####计算原表空间大小<br>在导出库执行如下SQL</p>
+</code></pre><h4 id="计算原表空间大小"><a href="#计算原表空间大小" class="headerlink" title="计算原表空间大小"></a>计算原表空间大小</h4><p>在导出库执行如下SQL</p>
 <pre><code>select
 b.file_name 物理文件名,
 b.tablespace_name 表空间,
@@ -405,7 +388,7 @@ from dba_free_space a,dba_data_files b
 where a.file_id=b.file_id
 group by b.tablespace_name,b.file_name,b.bytes
 order by b.tablespace_name;
-</code></pre><p>####创建表空间<br>根据上面计算出的表空间大小，按需创建表空间</p>
+</code></pre><h4 id="创建表空间"><a href="#创建表空间" class="headerlink" title="创建表空间"></a>创建表空间</h4><p>根据上面计算出的表空间大小，按需创建表空间</p>
 <pre><code>create tablespace tjv8dttbs datafile &apos;/datafs/oradata/cbps/v8data01.dbf&apos; size 32000M autoextend off;
 alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data02.dbf&apos; size 32000M autoextend off;
 alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data03.dbf&apos; size 32000M autoextend off;
@@ -414,33 +397,31 @@ alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data05.dbf&
 alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data06.dbf&apos; size 32000M autoextend off;
 alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data07.dbf&apos; size 32000M autoextend off;
 alter tablespace tjv8dttbs add datafile &apos;/datafs/oradata/cbps/v8data08.dbf&apos; size 32000M autoextend off;
-</code></pre><p>####创建DBLINK<br>sys用户登录数据库，创建数据库链接，通过DBLINK方式导库（也可通过常规的EXPDP、IMPDP操作）</p>
+</code></pre><h4 id="创建DBLINK"><a href="#创建DBLINK" class="headerlink" title="创建DBLINK"></a>创建DBLINK</h4><p>sys用户登录数据库，创建数据库链接，通过DBLINK方式导库（也可通过常规的EXPDP、IMPDP操作）</p>
 <pre><code>sqlplus sys/oracle@cbps    as sysdba
 
 create database link link101 connect to cl_biz1 identified by wasd4321 using &apos;(DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 10.31.17.101)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = cbps)     )   )&apos;; 
-</code></pre><p>####导入整库<br>注意源库中的表空间，需将所涉及的所有表空间都导入到新库，耗时较长，按目前天津库情况一般需要8-12小时</p>
+</code></pre><h4 id="导入整库"><a href="#导入整库" class="headerlink" title="导入整库"></a>导入整库</h4><p>注意源库中的表空间，需将所涉及的所有表空间都导入到新库，耗时较长，按目前天津库情况一般需要8-12小时</p>
 <pre><code>nohup impdp system/oracle@cbps network_link=link101 logfile=impdp101_1001.log schemas=BIZ_PROC,CL_BIZ1,CL_BIZ2,CL_CNTAP,CL_CNTR1,CL_CNTR2,CL_INTERFACE,CL_CUST1,CODE,PRODUCT,UN_BIZ,incrementcbpsv8 remap_tablespace=TJV8DTTBS:tjv8dttbs,TJV8IDXTBS:tjv8dttbs  &amp;
-</code></pre><p>####导入public同义词<br>有时候有些pulic的同义词未导入到新库，需要重新创建这些同义词<br>首先先在源库查询pulic的同义词，将SQL查询结果在sqlplus下执行</p>
+</code></pre><h4 id="导入public同义词"><a href="#导入public同义词" class="headerlink" title="导入public同义词"></a>导入public同义词</h4><p>有时候有些pulic的同义词未导入到新库，需要重新创建这些同义词<br>首先先在源库查询pulic的同义词，将SQL查询结果在sqlplus下执行</p>
 <pre><code>SELECT &apos;CREATE  PUBLIC SYNONYM &apos;||synonym_name||&apos; FOR &apos;||table_owner||&apos;.&apos;||table_name||&apos;;&apos; FROM DBA_SYNONYMS WHERE 
 table_owner in (&apos;BIZ_PROC&apos;,&apos;CL_BIZ1&apos;,&apos;CL_BIZ2&apos;,&apos;CL_CNTAP&apos;,&apos;CL_CNTR1&apos;,&apos;CL_CNTR2&apos;,&apos;CL_INTERFACE&apos;,&apos;CL_CUST1&apos;,&apos;CODE&apos;,&apos;PRODUCT&apos;,&apos;UN_BIZ&apos;)  
 AND owner=&apos;PUBLIC&apos;
-</code></pre><p>###数据库调整</p>
-<p>####调整数据库链接数<br>修改数据库链接数为1500，并重启数据库</p>
+</code></pre><h3 id="数据库调整"><a href="#数据库调整" class="headerlink" title="数据库调整"></a>数据库调整</h3><h4 id="调整数据库链接数"><a href="#调整数据库链接数" class="headerlink" title="调整数据库链接数"></a>调整数据库链接数</h4><p>修改数据库链接数为1500，并重启数据库</p>
 <pre><code>sqlplus sys/oracle@cbps as sysdba
 SQL&gt; alter system set processes=1500 scope=spfile;
 SQL&gt; shutdown immediate
 SQL&gt; startup
-</code></pre><p>####调整用户过期设置</p>
-<pre><code>sqlplus sys/oracle@cbps as sysdba
+</code></pre><h4 id="调整用户过期设置"><a href="#调整用户过期设置" class="headerlink" title="调整用户过期设置"></a>调整用户过期设置</h4><pre><code>sqlplus sys/oracle@cbps as sysdba
 SQL&gt;ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
-</code></pre><p>####重新编译失效对象<br>将如下SQL的执行结果，在sqlplus中执行</p>
+</code></pre><h4 id="重新编译失效对象"><a href="#重新编译失效对象" class="headerlink" title="重新编译失效对象"></a>重新编译失效对象</h4><p>将如下SQL的执行结果，在sqlplus中执行</p>
 <pre><code>SELECT &apos;ALTER &apos; || object_type || &apos; &apos; || owner || &apos;.&apos; || object_name ||
    &apos; COMPILE;&apos;
 FROM dba_objects
 WHERE status &lt;&gt; &apos;VALID&apos;;
 或直接编译schema
 execute utl_recomp.recomp_serial(&apos;SCOTT&apos;);
-</code></pre><p>####重新对数据库进行统计分析<br>导入过程中会丢失数据库统计分析信息，导致执行计划错误，数据库性能较差，可执行如下SQL重新进行统计分析</p>
+</code></pre><h4 id="重新对数据库进行统计分析"><a href="#重新对数据库进行统计分析" class="headerlink" title="重新对数据库进行统计分析"></a>重新对数据库进行统计分析</h4><p>导入过程中会丢失数据库统计分析信息，导致执行计划错误，数据库性能较差，可执行如下SQL重新进行统计分析</p>
 <pre><code>Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;BIZ_PROC&apos;,cascade=&gt; TRUE, degree =&gt;16);
 Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;CL_BIZ1&apos;,cascade=&gt; TRUE, degree =&gt;16);
 Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;CL_BIZ2&apos;,cascade=&gt; TRUE, degree =&gt;16);
@@ -587,7 +568,7 @@ Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;INCREMENTCBPSV8&apos;,casc
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建后台环境"><span class="nav-number">1.</span> <span class="nav-text">搭建后台环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用服务安装及配置"><span class="nav-number">1.1.</span> <span class="nav-text">应用服务安装及配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Server打包"><span class="nav-number">1.1.1.</span> <span class="nav-text">Server打包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境变量配置"><span class="nav-number">1.1.2.</span> <span class="nav-text">环境变量配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UBB、DM配置"><span class="nav-number">1.1.3.</span> <span class="nav-text">UBB、DM配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UBB"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">UBB</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DM"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">DM</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库设置"><span class="nav-number">1.2.</span> <span class="nav-text">数据库设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#删除原数据库"><span class="nav-number">1.2.1.</span> <span class="nav-text">删除原数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除数据库实例"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">删除数据库实例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除原用户"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">删除原用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除原表空间"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">删除原表空间</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#删除原表空间数据文件"><span class="nav-number">1.2.1.3.1.</span> <span class="nav-text">删除原表空间数据文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新库"><span class="nav-number">1.2.2.</span> <span class="nav-text">创建新库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建数据库实例"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">创建数据库实例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算原表空间大小"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">计算原表空间大小</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建表空间"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">创建表空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建DBLINK"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">创建DBLINK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入整库"><span class="nav-number">1.2.2.5.</span> <span class="nav-text">导入整库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入public同义词"><span class="nav-number">1.2.2.6.</span> <span class="nav-text">导入public同义词</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库调整"><span class="nav-number">1.2.3.</span> <span class="nav-text">数据库调整</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#调整数据库链接数"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">调整数据库链接数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调整用户过期设置"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">调整用户过期设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重新编译失效对象"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">重新编译失效对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重新对数据库进行统计分析"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">重新对数据库进行统计分析</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
