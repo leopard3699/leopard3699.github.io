@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leopard3699.github.io/"/>
-  <updated>2016-03-24T05:48:52.000Z</updated>
+  <updated>2016-03-25T01:05:27.000Z</updated>
   <id>http://leopard3699.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>create_cbps8_envirament</title>
+    <title>8版后台环境搭建(应用及数据库)</title>
     <link href="http://leopard3699.github.io/2016/03/24/8%E7%89%88%E5%90%8E%E5%8F%B0%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA(%E5%BA%94%E7%94%A8%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%BA%93)/"/>
     <id>http://leopard3699.github.io/2016/03/24/8版后台环境搭建(应用及数据库)/</id>
     <published>2016-03-24T05:48:13.000Z</published>
-    <updated>2016-03-24T05:48:52.000Z</updated>
+    <updated>2016-03-25T01:05:27.000Z</updated>
     
     <content type="html">&lt;p&gt;#搭建后台环境&lt;/p&gt;
 &lt;p&gt;##应用服务安装及配置&lt;/p&gt;
@@ -211,6 +211,8 @@ Exec dbms_stats.gather_schema_stats(ownname=&amp;gt;&amp;apos;INCREMENTCBPSV8&am
     
     </summary>
     
+    
+      <category term="tuxedo oracle proc" scheme="http://leopard3699.github.io/tags/tuxedo-oracle-proc/"/>
     
   </entry>
   
