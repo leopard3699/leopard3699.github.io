@@ -218,6 +218,112 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/29/tuxedo多域网关及跨域路由双活问题/" itemprop="url">
+                  tuxedo多域网关及跨域路由双活问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-29T08:48:38+08:00" content="2016-03-29">
+              2016-03-29
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#Tuxedo多域及跨域路由双活</p>
+<p>##由目前的单域网关转为多域网关</p>
+<p>###技术实现：<br>    配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.</p>
+<p>###配置图示</p>
+<div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/%E5%9B%BE%E7%89%87%201.png" width="500" height="500" alt="图片名称" align="center"><br></div>
+
+
+<div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo2.png" width="600" height="400" alt="图片名称" align="center"><br></div>
+
+<p>###技术验证<br>    ubb中指定routing方式，将对871101的跨域调用走域网关GW1，将对871104的跨域调用走域网关GW2，DM中指定远程域routing方式，指定GW1下的871101连接ubps50，GW2下的871104连接ubps70.分别调用871101及871104，测试发现GW1及GW2网关调用次数增加1且远程域50、70均找到调用记录</p>
+<p>##跨域路由如何解决双活</p>
+<p>###技术实现</p>
+<pre><code>修改tuxedo DM_ROUTING中路由表达式的RANGES属性
+</code></pre><p>###配置图示</p>
+<div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo3.png" width="600" height="200" alt="图片名称" align="center"><br></div>
+
+<p>###技术验证</p>
+<pre><code>在ubps50及ubps70均正常时，跨域路由访问ubps50，当ubps50挂掉时，tuxedo自动将对4的跨域调用，路由到ubps70上.
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/24/8版后台环境搭建(应用及数据库)/" itemprop="url">
                   8版后台环境搭建(应用及数据库)
                 </a>
@@ -493,7 +599,7 @@ Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;INCREMENTCBPSV8&apos;,casc
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -503,7 +609,7 @@ Exec dbms_stats.gather_schema_stats(ownname=&gt;&apos;INCREMENTCBPSV8&apos;,casc
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
