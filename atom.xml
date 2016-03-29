@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leopard3699.github.io/"/>
-  <updated>2016-03-29T00:49:48.000Z</updated>
+  <updated>2016-03-29T00:53:46.000Z</updated>
   <id>http://leopard3699.github.io/</id>
   
   <author>
@@ -20,33 +20,24 @@
     <link href="http://leopard3699.github.io/2016/03/29/tuxedo%E5%A4%9A%E5%9F%9F%E7%BD%91%E5%85%B3%E5%8F%8A%E8%B7%A8%E5%9F%9F%E8%B7%AF%E7%94%B1%E5%8F%8C%E6%B4%BB%E9%97%AE%E9%A2%98/"/>
     <id>http://leopard3699.github.io/2016/03/29/tuxedo多域网关及跨域路由双活问题/</id>
     <published>2016-03-29T00:48:38.000Z</published>
-    <updated>2016-03-29T00:49:48.000Z</updated>
+    <updated>2016-03-29T00:53:46.000Z</updated>
     
-    <content type="html">&lt;p&gt;#Tuxedo多域及跨域路由双活&lt;/p&gt;
-&lt;p&gt;##由目前的单域网关转为多域网关&lt;/p&gt;
-&lt;p&gt;###技术实现：&lt;br&gt;    配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.&lt;/p&gt;
-&lt;p&gt;###配置图示&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xsdzs.com1.z0.glb.clouddn.com/%E5%9B%BE%E7%89%87%201.png&quot; width=&quot;500&quot; height=&quot;500&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;
+    <content type="html">&lt;h1 id=&quot;Tuxedo多域及跨域路由双活&quot;&gt;&lt;a href=&quot;#Tuxedo多域及跨域路由双活&quot; class=&quot;headerlink&quot; title=&quot;Tuxedo多域及跨域路由双活&quot;&gt;&lt;/a&gt;Tuxedo多域及跨域路由双活&lt;/h1&gt;&lt;h2 id=&quot;由目前的单域网关转为多域网关&quot;&gt;&lt;a href=&quot;#由目前的单域网关转为多域网关&quot; class=&quot;headerlink&quot; title=&quot;由目前的单域网关转为多域网关&quot;&gt;&lt;/a&gt;由目前的单域网关转为多域网关&lt;/h2&gt;&lt;h3 id=&quot;技术实现：&quot;&gt;&lt;a href=&quot;#技术实现：&quot; class=&quot;headerlink&quot; title=&quot;技术实现：&quot;&gt;&lt;/a&gt;技术实现：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;配置图示&quot;&gt;&lt;a href=&quot;#配置图示&quot; class=&quot;headerlink&quot; title=&quot;配置图示&quot;&gt;&lt;/a&gt;配置图示&lt;/h3&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xsdzs.com1.z0.glb.clouddn.com/%E5%9B%BE%E7%89%87%201.png&quot; width=&quot;500&quot; height=&quot;500&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;
 
 
 &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo2.png&quot; width=&quot;600&quot; height=&quot;400&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;
 
-&lt;p&gt;###技术验证&lt;br&gt;    ubb中指定routing方式，将对871101的跨域调用走域网关GW1，将对871104的跨域调用走域网关GW2，DM中指定远程域routing方式，指定GW1下的871101连接ubps50，GW2下的871104连接ubps70.分别调用871101及871104，测试发现GW1及GW2网关调用次数增加1且远程域50、70均找到调用记录&lt;/p&gt;
-&lt;p&gt;##跨域路由如何解决双活&lt;/p&gt;
-&lt;p&gt;###技术实现&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;修改tuxedo DM_ROUTING中路由表达式的RANGES属性
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###配置图示&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;
+&lt;h3 id=&quot;技术验证&quot;&gt;&lt;a href=&quot;#技术验证&quot; class=&quot;headerlink&quot; title=&quot;技术验证&quot;&gt;&lt;/a&gt;技术验证&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;ubb中指定routing方式，将对871101的跨域调用走域网关GW1，将对871104的跨域调用走域网关GW2，DM中指定远程域routing方式，指定GW1下的871101连接ubps50，GW2下的871104连接ubps70.分别调用871101及871104，测试发现GW1及GW2网关调用次数增加1且远程域50、70均找到调用记录
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;跨域路由如何解决双活&quot;&gt;&lt;a href=&quot;#跨域路由如何解决双活&quot; class=&quot;headerlink&quot; title=&quot;跨域路由如何解决双活&quot;&gt;&lt;/a&gt;跨域路由如何解决双活&lt;/h2&gt;&lt;h3 id=&quot;技术实现&quot;&gt;&lt;a href=&quot;#技术实现&quot; class=&quot;headerlink&quot; title=&quot;技术实现&quot;&gt;&lt;/a&gt;技术实现&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;修改tuxedo DM_ROUTING中路由表达式的RANGES属性
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;配置图示-1&quot;&gt;&lt;a href=&quot;#配置图示-1&quot; class=&quot;headerlink&quot; title=&quot;配置图示&quot;&gt;&lt;/a&gt;配置图示&lt;/h3&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;图片名称&quot; align=&quot;center&quot;&gt;&lt;br&gt;&lt;/div&gt;
 
-&lt;p&gt;###技术验证&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;在ubps50及ubps70均正常时，跨域路由访问ubps50，当ubps50挂掉时，tuxedo自动将对4的跨域调用，路由到ubps70上.
+&lt;h3 id=&quot;技术验证-1&quot;&gt;&lt;a href=&quot;#技术验证-1&quot; class=&quot;headerlink&quot; title=&quot;技术验证&quot;&gt;&lt;/a&gt;技术验证&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;在ubps50及ubps70均正常时，跨域路由访问ubps50，当ubps50挂掉时，tuxedo自动将对4的跨域调用，路由到ubps70上.
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;#Tuxedo多域及跨域路由双活&lt;/p&gt;
-&lt;p&gt;##由目前的单域网关转为多域网关&lt;/p&gt;
-&lt;p&gt;###技术实现：&lt;br&gt;    配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.&lt;/p
+      &lt;h1 id=&quot;Tuxedo多域及跨域路由双活&quot;&gt;&lt;a href=&quot;#Tuxedo多域及跨域路由双活&quot; class=&quot;headerlink&quot; title=&quot;Tuxedo多域及跨域路由双活&quot;&gt;&lt;/a&gt;Tuxedo多域及跨域路由双活&lt;/h1&gt;&lt;h2 id=&quot;由目前的单域网关转为多域网
     
     </summary>
     

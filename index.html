@@ -261,24 +261,17 @@
       
         
           
-            <p>#Tuxedo多域及跨域路由双活</p>
-<p>##由目前的单域网关转为多域网关</p>
-<p>###技术实现：<br>    配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.</p>
-<p>###配置图示</p>
-<div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/%E5%9B%BE%E7%89%87%201.png" width="500" height="500" alt="图片名称" align="center"><br></div>
+            <h1 id="Tuxedo多域及跨域路由双活"><a href="#Tuxedo多域及跨域路由双活" class="headerlink" title="Tuxedo多域及跨域路由双活"></a>Tuxedo多域及跨域路由双活</h1><h2 id="由目前的单域网关转为多域网关"><a href="#由目前的单域网关转为多域网关" class="headerlink" title="由目前的单域网关转为多域网关"></a>由目前的单域网关转为多域网关</h2><h3 id="技术实现："><a href="#技术实现：" class="headerlink" title="技术实现："></a>技术实现：</h3><pre><code>配置tuxedo多域网关组，根据UBB中的DDR路由规则，可以指定某一组跨域服务走域网关A,其他跨域服务走域关B，来缓解目前单域网关的压力.
+</code></pre><h3 id="配置图示"><a href="#配置图示" class="headerlink" title="配置图示"></a>配置图示</h3><div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/%E5%9B%BE%E7%89%87%201.png" width="500" height="500" alt="图片名称" align="center"><br></div>
 
 
 <div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo2.png" width="600" height="400" alt="图片名称" align="center"><br></div>
 
-<p>###技术验证<br>    ubb中指定routing方式，将对871101的跨域调用走域网关GW1，将对871104的跨域调用走域网关GW2，DM中指定远程域routing方式，指定GW1下的871101连接ubps50，GW2下的871104连接ubps70.分别调用871101及871104，测试发现GW1及GW2网关调用次数增加1且远程域50、70均找到调用记录</p>
-<p>##跨域路由如何解决双活</p>
-<p>###技术实现</p>
-<pre><code>修改tuxedo DM_ROUTING中路由表达式的RANGES属性
-</code></pre><p>###配置图示</p>
-<div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo3.png" width="600" height="200" alt="图片名称" align="center"><br></div>
+<h3 id="技术验证"><a href="#技术验证" class="headerlink" title="技术验证"></a>技术验证</h3><pre><code>ubb中指定routing方式，将对871101的跨域调用走域网关GW1，将对871104的跨域调用走域网关GW2，DM中指定远程域routing方式，指定GW1下的871101连接ubps50，GW2下的871104连接ubps70.分别调用871101及871104，测试发现GW1及GW2网关调用次数增加1且远程域50、70均找到调用记录
+</code></pre><h2 id="跨域路由如何解决双活"><a href="#跨域路由如何解决双活" class="headerlink" title="跨域路由如何解决双活"></a>跨域路由如何解决双活</h2><h3 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h3><pre><code>修改tuxedo DM_ROUTING中路由表达式的RANGES属性
+</code></pre><h3 id="配置图示-1"><a href="#配置图示-1" class="headerlink" title="配置图示"></a>配置图示</h3><div align="center"><br><img src="http://7xsdzs.com1.z0.glb.clouddn.com/tuxedo3.png" width="600" height="200" alt="图片名称" align="center"><br></div>
 
-<p>###技术验证</p>
-<pre><code>在ubps50及ubps70均正常时，跨域路由访问ubps50，当ubps50挂掉时，tuxedo自动将对4的跨域调用，路由到ubps70上.
+<h3 id="技术验证-1"><a href="#技术验证-1" class="headerlink" title="技术验证"></a>技术验证</h3><pre><code>在ubps50及ubps70均正常时，跨域路由访问ubps50，当ubps50挂掉时，tuxedo自动将对4的跨域调用，路由到ubps70上.
 </code></pre>
           
         
